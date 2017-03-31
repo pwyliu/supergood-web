@@ -3,30 +3,21 @@ body {
 }
 
 .section {
-  height: 375px;
   display: -webkit-flex;
   display:         flex;
   -webkit-align-items: center;
           align-items: center;
   -webkit-justify-content: center;
           justify-content: center;
+  margin-top: 100px;
 }
 
-.supergood-block {
-  display: absolute;
-  margin-left: 45px;
-}
-
-.supergood-header {
-  text-align: center;
-}
-
-.supergood-title {
-  font-size: 4.8rem;
+.supergood-logo-title {
   display: inline;
+  font-size: 4.8rem;
 }
 
-.supergood-dot {
+.supergood-logo-dot {
   color: #E12626;
   display: inline;
   font-size: 5.0rem;
@@ -34,11 +25,11 @@ body {
 
 .supergood-desc {
   font-size: 1.6rem;
-  margin-top: 48px;
   line-height: 2px;
+  margin-top: 48px;
 }
 
-.supergood-email-red {
+.supergood-desc-dot {
   color: #E12626;
   display: inline;
   font-size: 1.8rem;
