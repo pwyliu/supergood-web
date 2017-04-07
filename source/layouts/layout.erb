@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title><%= current_page.data.title || "Supergood." %></title>
+    <meta name="description" content="A pretty good company.">
+    <meta name="author" content="Paul Liu, Andrew Lau">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <%= stylesheet_link_tag "supergood" %>
+  </head>
+  <body>
+  <%= yield %>
+  </body>
+</html>
