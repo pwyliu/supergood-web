@@ -34,7 +34,7 @@ After building, deploy the site using the `s3_sync` command. This will push to S
 $ bundle exec middleman s3_sync
 ```
 
-There is a convinience script to build and push:
+There is a convenience script to build and push:
 
 ```bash
 $ cd supergood-web
