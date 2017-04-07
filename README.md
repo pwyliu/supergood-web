@@ -1,4 +1,6 @@
-# Supergood.work
+![logo](https://assets.supergood.work/logo.png)
+
+# supergood-web
 This is the source for [supergood.work](https://supergood.work). This site is built and deployed with [Middleman](https://middlemanapp.com/).
 
 ## Install
