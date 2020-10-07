@@ -30,12 +30,6 @@ The site is deployed to an S3 bucket sitting behind Cloudflare. To deploy, you m
 * `CLOUDFLARE_CLIENT_API_KEY`
 * `CLOUDFLARE_EMAIL`
 
-After building, deploy the site using the `s3_sync` command. This will push to S3 and purge the CDN:
-
-```bash
-$ bundle exec middleman s3_sync
-```
-
 There is a convenience script to build and push:
 
 ```bash

@@ -1,11 +1,15 @@
 #!/bin/bash
-# build and deploy supergood.work
-# see README.md and config.rb for more details
-echo "Engage..."
-set -veuo pipefail
+set -euo pipefail
 
-bundle install --deployment > /dev/null
-rm -rf build/
+docker build -t supergood-web:deployenv .
 
-bundle exec middleman build
-bundle exec middleman s3_sync
+docker run \
+    -it \
+    --rm \
+    --env AWS_ACCESS_KEY_ID \
+    --env AWS_SECRET_ACCESS_KEY \
+    --env AWS_SESSION_TOKEN \
+    --env CLOUDFLARE_CLIENT_API_KEY \
+    --env CLOUDFLARE_EMAIL \
+    -v "$(pwd)":/app \
+    supergood-web:deployenv /app/deploy_in_docker.sh
