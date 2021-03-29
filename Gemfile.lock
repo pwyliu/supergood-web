@@ -62,7 +62,7 @@ GEM
       concurrent-ruby (~> 1.0)
     ipaddress (0.8.3)
     jwt (2.2.2)
-    kramdown (2.3.0)
+    kramdown (2.3.1)
       rexml
     libv8 (3.16.14.19)
     listen (3.0.8)
